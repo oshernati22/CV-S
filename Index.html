@@ -13,6 +13,26 @@
         <title>OSHER NATI | CV </title>
     </head>
     <body>
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toogle">
+
+            <label for="navi-toogle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+
+            <div class="navigation__background">&nbsp;</div>
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>Home</a></li> 
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Hello</a></li> 
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Skils</a></li> 
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>My Projects</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Fun</a></li> 
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>06</span>contact me</a></li> 
+                </ul>
+            </nav>
+        </div>
         <header class="header">
            <div class="header__logo-box">
                <img src="img/favicon.png" alt="Logo" class="header__logo">
@@ -48,9 +68,28 @@
                     </div>
                     <div class="col-1-of-2">
                         <div class="composition">
-                            <img src="img/nat-1-large.jpg" alt="Photo1" class="composition__photo composition__photo--p1">
-                            <img src="img/nat-2-large.jpg" alt="Photo2" class="composition__photo composition__photo--p2">
-                            <img src="img/nat-3-large.jpg" alt="Photo3" class="composition__photo composition__photo--p3">
+                            <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                 alt="Photo 1"
+                                 class="composition__photo composition__photo--p1"
+                                 src="img/nat-1-large.jpg">
+
+                            <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                 alt="Photo 2"
+                                 class="composition__photo composition__photo--p2"
+                                 src="img/nat-2-large.jpg">
+
+                            <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                 alt="Photo 3"
+                                 class="composition__photo composition__photo--p3"
+                                 src="img/nat-3-large.jpg">
+
+                            
+                           <!--<img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
+                            <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
+                            <img -->  
                         </div>
                      </div>
                 </div>
@@ -118,7 +157,7 @@
                                     <span class="card__heading-span card__heading-span--1">The Sea Explorer</span>
                                     
                                 </h4>
-                                <div class="card__detials">
+                                <div class="card__details">
                                     <ul>
                                         <li>3 days tuours</li>
                                         <li>3 days tuours</li>
@@ -149,7 +188,7 @@
                                     <span class="card__heading-span card__heading-span--2">The Forest Hiker</span>
                                     
                                 </h4>
-                                <div class="card__detials">
+                                <div class="card__details">
                                     <ul>
                                         <li>3 days tuours</li>
                                         <li>3 days tuours</li>
@@ -180,7 +219,7 @@
                                     <span class="card__heading-span card__heading-span--3">The Snow Adventuer</span>
                                     
                                 </h4>
-                                <div class="card__detials">
+                                <div class="card__details">
                                     <ul>
                                         <li>3 days tuours</li>
                                         <li>3 days tuours</li>
@@ -251,11 +290,78 @@
                 </div>
             </div>   
             <div class="u-center-text u-margin-top-big">
-                <a href="#" class="btn-text ">Read all story osherChange &rarr;</a>
+                <a href="#" class="btn-text ">Read all story &rarr;</a>
             </div>
+           </section>
+           <section class="section-book">
+             <div class="row">
+                <div class="book">
+                    <div class="book__form">
+                        <form action="#" class="form">
+                            <div class="u-center-text u-margin-bottom-big">
+                                <h2 class="heading-secondary">
+                                  Contact Me
+                               </h2>
+                            </div>
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                                <label for="name" class="form__label">Full Name</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="email" class="form__input" placeholder="Email Adress" id="email" required>
+                                <label for="email" class="form__label">Email Adress</label>
+                            </div>
+
+                            <div class="form__group u-margin-bottom-medium">
+                                <div class="form__radio-group">
+                                     <input type="radio" class="form__radio-input" id="company" name="size"> 
+                                     <label for="company" class="form__radio-label">
+                                        <span class="form__radio-button"></span> 
+                                        company</label> 
+                                </div>
+                                <div class="form__radio-group">
+                                    <input type="radio" class="form__radio-input" id="private" name="size"> 
+                                    <label for="private" class="form__radio-label">
+                                        <span class="form__radio-button"></span> 
+                                        private</label> 
+                                </div>
+                            </div>
+                            <div class="form__group">
+                                <button class="btn btn--green">Next Step &rarr;</button>  
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+             </div>
            </section>
 
         </main>
+        <footer class="footer">
+            <div class="footer__logo-box">
+                <picture class="footer__logo">
+                    <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
+                    <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" class="footer__logo" src="img/logo-green-2x.png">
+                </picture>     
+            </div>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <div class="footer__navigation">
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="footer__link">company</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">contact me</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">send message</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-1-of-2">
+                    <p class="footer__copyright">
+                         built my <a href="#" class="footer__link">web</a> for learning.Copyright &copy; by osher nati. you are 100% allowed to use this webpage for both personal and commercial use,but not claim it as youre own design.A credit to the original author, jhonas fucker is of course recommend fuck you  !
+                    </p>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
 
